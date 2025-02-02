@@ -6,8 +6,7 @@ import pandas as pd
 # Adjust start date if needed
 
 # Display the first few rows of the data
-def get_data(data):
-    tickers = input("Enter the tickers you want to download separated by commas: ").split(",")
-    data = yf.download(tickers, start="1900-01-01")  
-    return data.head()
+def get_data(tickers):
+    data = yf.download(tickers, start="2000-01-01")  
+    return data
 
