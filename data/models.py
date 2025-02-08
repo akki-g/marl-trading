@@ -1,5 +1,11 @@
 
 
+class Stock:
+    ticker = str
+    price = 0
+    volume = 0
+    
+
 class Position:
     ticker = str
     quantity = 0
